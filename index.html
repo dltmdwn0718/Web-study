@@ -2,11 +2,24 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>내 첫 웹사이트</title>
+  <title>미니 카운터 웹</title>
+  <!-- CSS 파일 연결 -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, Web!</h1>
-  <p>Git과 GitHub 연동 테스트 중입니다.</p>
-  <p>노트북에서 수정한 내용입니다!</p>
+  <div class="card">
+    <h1>나의 첫 웹 앱
+    
+    </h1>
+    <div id="count">0</div>
+    <div class="btn-group">
+      <button id="minus-btn">-1 감소</button>
+      <button id="reset-btn">초기화</button>
+      <button id="plus-btn">+1 증가</button>
+    </div>
+  </div>
+
+  <!-- JavaScript 파일 연결 -->
+  <script src="script.js"></script>
 </body>
 </html>
