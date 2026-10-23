@@ -1,38 +1,20 @@
-html, body {
-  touch-action: manipulation;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f2f5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* 동적 타임테이블 요소 디자인 */
+.divider {
+  border: 0;
+  border-top: 2px dashed #eee;
+  margin: 25px 0;
 }
 
-.card {
-  touch-action: manipulation;
-  background: white;
-  width: 90%;
-  max-width: 450px;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+#time-input {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
 }
 
-h1 {
-  text-align: center;
-  font-size: 22px;
-  margin-top: 0;
-  color: #333;
-}
-
-.input-group {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-#task-input {
+#schedule-input {
   flex: 1;
   padding: 12px;
   font-size: 15px;
@@ -41,59 +23,28 @@ h1 {
   outline: none;
 }
 
-#add-btn {
-  user-select: none;
-  padding: 0 18px;
-  font-size: 15px;
-  border: none;
-  border-radius: 6px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  transition: background 0.2s;
+.timetable-list {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
 }
 
-#add-btn:active {
-  background-color: #0056b3;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.timetable-list li {
   padding: 12px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e9ecef;
 }
 
-li:last-child {
-  border-bottom: none;
+.time-badge {
+  font-weight: bold;
+  color: #007bff;
+  background: #e7f1ff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 12px;
 }
 
-.task-text {
+.schedule-text {
   flex: 1;
-  margin-left: 10px;
   font-size: 15px;
-  cursor: pointer;
-}
-
-/* 완료된 항목의 스타일 */
-.completed .task-text {
-  text-decoration: line-through;
-  color: #aaa;
-}
-
-.delete-btn {
-  background: #ff4d4d;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 6px 12px;
-  font-size: 13px;
-  cursor: pointer;
 }

@@ -8,15 +8,24 @@
 </head>
 <body>
   <div class="card">
-    <h1>나만의 투두 & 공지 확인</h1>
+    <h1 id="current-date"></h1>
+    
+    <!-- 동적 타임테이블 영역 -->
     <div class="input-group">
-      <!-- 나중에는 여기에 공지사항 링크를 넣게 됩니다 -->
+      <input type="time" id="time-input">
+      <input type="text" id="schedule-input" placeholder="스케줄 입력">
+      <button id="add-schedule-btn">추가</button>
+    </div>
+    <ul id="schedule-list" class="timetable-list"></ul>
+
+    <hr class="divider">
+
+    <!-- 투두리스트 & 공지 영역 -->
+    <div class="input-group">
       <input type="text" id="task-input" placeholder="할 일이나 공지 링크 입력">
       <button id="add-btn">추가</button>
     </div>
-    <ul id="task-list">
-      <!-- 자바스크립트가 여기에 리스트(li)를 하나씩 넣어줄 겁니다 -->
-    </ul>
+    <ul id="task-list"></ul>
   </div>
   <script src="script.js"></script>
 </body>
